@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meine Bewerbungsseite</title>
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data: https://images.unsplash.com; font-src 'self' https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline'; frame-src https://www.youtube-nocookie.com; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: 'Courier New', Courier, monospace;
+      }
+      .timeline {
+        position: relative;
+        padding-left: 2rem;
+        margin: 2rem 0;
+        border-left: 3px solid #999;
+      }
+      .timeline::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -7px;
+        height: 100%;
+        width: 14px;
+        background: transparent;
+      }
+      .timeline-entry {
+        position: relative;
+        margin-bottom: 2rem;
+        padding-left: 1rem;
+      }
+      .timeline-entry::before {
+        content: "";
+        position: absolute;
+        left: -1.2rem;
+        top: 0.2rem;
+        width: 1rem;
+        height: 1rem;
+        background: #0077cc;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 0 2px #0077cc;
+      }
+      .wordcloud {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+      .wordcloud span {
+        background-color: #eef6fc;
+        color: #0366d6;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: bold;
+      }
+      figure img {
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="container-fluid">
+      <ul><li><strong>Bewerbung</strong></li></ul>
+    </nav>
+
+    <main class="container">
+      <div class="grid" id="vorstellung">
+        <section>
+          <hgroup>
+            <h2>Hallo, ich bin Max Mustermann</h2>
+            <h3>IT-begeistert • Analytisch • Teamorientiert</h3>
+          </hgroup>
+          <p>
+            Ich bin angehender IT-Spezialist mit Leidenschaft für sauberen Code, innovative Lösungen und digitale Technologien. Meine Interessen reichen von Webentwicklung über Datenanalyse bis hin zu IT-Sicherheit. Ich suche aktuell nach spannenden Einstiegsmöglichkeiten im IT-Bereich.
+          </p>
+        </section>
+        <section>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="Porträtfoto" loading="lazy" />
+            <figcaption><a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Bildquelle: Unsplash</a></figcaption>
+          </figure>
+        </section>
+      </div>
+
+      <div class="grid" id="lebenslauf">
+        <section>
+          <h3>Schulischer Werdegang</h3>
+          <div class="timeline">
+            <div class="timeline-entry">
+              <strong>2021 – 2024:</strong> Fachabitur – IT-Schwerpunkt, Berufskolleg XY
+            </div>
+            <div class="timeline-entry">
+              <strong>2017 – 2021:</strong> Realschule Musterstadt – Abschluss: Mittlere Reife
+            </div>
+          </div>
+
+          <h3>Praktische Erfahrungen</h3>
+          <div class="timeline">
+            <div class="timeline-entry">
+              <strong>2023:</strong> Praktikum – Webentwicklung bei WebTech GmbH
+            </div>
+            <div class="timeline-entry">
+              <strong>2022:</strong> Nebenjob – IT-Support an Schule Musterstadt
+            </div>
+            <div class="timeline-entry">
+              <strong>2021 – heute:</strong> Eigenständige Projekte (siehe unten)
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="grid">
+        <section>
+          <h3>Skills</h3>
+          <div class="wordcloud">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>Python</span><span>Linux</span><span>Git</span>
+            <span>VS Code</span><span>Teamarbeit</span><span>Selbstorganisation</span>
+            <span>Analytisches Denken</span><span>Figma</span><span>Agile Methoden</span>
+          </div>
+        </section>
+      </div>
+
+      <div class="grid" id="projekte">
+        <section>
+          <h3>Projekte</h3>
+          <ul>
+            <li>
+              <a href="projekt.html">Portfolio-Website</a>
+              <br /><small>Persönliche Webvisitenkarte mit HTML, CSS & JS</small>
+            </li>
+            <li>
+              <a href="#">ToDo App</a>
+              <br /><small>Task-Manager mit LocalStorage in Vanilla JS</small>
+            </li>
+            <li>
+              <a href="#">IT-Wiki</a>
+              <br /><small>Eigenes Nachschlagewerk mit Markdown und GitHub Pages</small>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <section aria-label="Subscribe example">
+      <div class="container">
+        <article>
+          <hgroup>
+            <h2>Bleiben wir in Kontakt</h2>
+            <h3>Gerne sende ich Ihnen weitere Infos oder Bewerbungsunterlagen</h3>
+          </hgroup>
+          <form class="grid">
+            <input type="text" id="firstname" name="firstname" placeholder="Ihr Name" aria-label="Vorname" required />
+            <input type="email" id="email" name="email" placeholder="Ihre E-Mail" aria-label="E-Mail" required />
+            <button type="submit" onclick="event.preventDefault()">Nachricht senden</button>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <footer class="container">
+      <small>
+        <a href="impressum.html">Impressum</a> • <a href="datenschutz.html">Datenschutz</a>
+      </small>
+    </footer>
+  </body>
+</html>
