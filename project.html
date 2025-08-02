@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projekt: Portfolio-Website</title>
+  
+  <!-- Security Headers -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data:; font-src 'self' https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline'; frame-src https://www.youtube-nocookie.com; connect-src 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    .tech-item {
+      background-color: #eef6fc;
+      color: #0366d6;
+      padding: 0.75rem;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .feature-list {
+      list-style: none;
+      padding: 0;
+    }
+    .feature-list li {
+      padding: 0.5rem 0;
+      position: relative;
+      padding-left: 2rem;
+    }
+    .feature-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #28a745;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .demo-section {
+      background-color: #f8f9fa;
+      padding: 2rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .demo-placeholder {
+      background-color: #e9ecef;
+      border: 2px dashed #6c757d;
+      padding: 3rem;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+    .back-link {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #dee2e6;
+    }
+  </style>
+</head>
+<body>
+  <nav class="container-fluid">
+    <ul><li><a href="index.html" role="button">← Zurück zur Startseite</a></li></ul>
+  </nav>
+
+  <main class="container">
+    <!-- 1. Projektname als Überschrift -->
+    <hgroup>
+      <h1>Portfolio-Website</h1>
+      <h2>Persönliche Webvisitenkarte für IT-Bewerbungen</h2>
+    </hgroup>
+
+    <!-- 2. Kurzübersicht -->
+    <section>
+      <h3>Kurzübersicht</h3>
+      <p>
+        Diese Portfolio-Website ist eine moderne, responsive Bewerbungsseite, die speziell für IT-Berufe entwickelt wurde. 
+        Sie präsentiert Lebenslauf, Projekte und Fähigkeiten in einem ansprechenden OnePage-Design mit technischem Flair. 
+        Die Website nutzt modernes HTML5, CSS3 und JavaScript und ist vollständig responsiv für alle Endgeräte optimiert.
+      </p>
+    </section>
+
+    <!-- 3. Projektziel -->
+    <section>
+      <h3>Projektziel</h3>
+      <p>
+        Das Hauptziel war die Entwicklung einer professionellen Bewerbungswebsite, die meine technischen Fähigkeiten 
+        demonstriert und gleichzeitig als praktisches Beispiel für Clean Code und moderne Webentwicklung dient. 
+        Dabei wollte ich lernen, wie man eine ansprechende Benutzeroberfläche mit minimalistischem Design erstellt 
+        und gleichzeitig alle wichtigen Bewerbungsinformationen strukturiert präsentiert.
+      </p>
+    </section>
+
+    <!-- 4. Technologien & Tools -->
+    <section>
+      <h3>Technologien & Tools</h3>
+      <div class="tech-grid">
+        <div class="tech-item">HTML5</div>
+        <div class="tech-item">CSS3</div>
+        <div class="tech-item">JavaScript</div>
+        <div class="tech-item">Pico CSS</div>
+        <div class="tech-item">Responsive Design</div>
+        <div class="tech-item">Git</div>
+        <div class="tech-item">VS Code</div>
+        <div class="tech-item">Replit</div>
+      </div>
+    </section>
+
+    <!-- 5. Funktionen -->
+    <section>
+      <h3>Funktionen</h3>
+      <ul class="feature-list">
+        <li>Responsive OnePage-Design für alle Endgeräte</li>
+        <li>Interaktive Navigation mit Smooth Scrolling</li>
+        <li>Timeline-Darstellung für Lebenslauf</li>
+        <li>Skill-Wordcloud mit visueller Hervorhebung</li>
+        <li>Kontaktformular mit Validierung</li>
+        <li>Projektgalerie mit Verlinkungen</li>
+        <li>Saubere Typografie und moderne Farbgestaltung</li>
+        <li>SEO-optimierte Struktur</li>
+        <li>Impressum und Datenschutz-Seiten</li>
+      </ul>
+    </section>
+
+    <!-- 6. Screenshots / Demo -->
+    <section>
+      <h3>Screenshots & Demo</h3>
+      <div class="demo-section">
+        <div class="demo-placeholder">
+          <h4>Screenshot: Hauptseite</h4>
+          <p>Hier würde ein Screenshot der Hauptseite mit Navigation und Header-Bereich erscheinen</p>
+        </div>
+        <div class="demo-placeholder">
+          <h4>Screenshot: Lebenslauf-Timeline</h4>
+          <p>Hier würde ein Screenshot der Timeline-Darstellung des Lebenslaufs erscheinen</p>
+        </div>
+        <div class="demo-placeholder">
+          <h4>Screenshot: Mobile Ansicht</h4>
+          <p>Hier würde ein Screenshot der responsiven mobilen Darstellung erscheinen</p>
+        </div>
+        <p>
+          <a href="index.html" role="button">🚀 Live-Demo anzeigen</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- 7. Was ich gelernt habe -->
+    <section>
+      <h3>Was ich gelernt habe</h3>
+      <p>
+        <strong>Technische Erkenntnisse:</strong> Durch dieses Projekt habe ich den Umgang mit modernen CSS-Frameworks 
+        wie Pico CSS vertieft und gelernt, wie man ohne JavaScript-Frameworks eine ansprechende, interaktive Website erstellt. 
+        Besonders die Implementierung der Timeline-Komponente und der responsiven Grid-Layouts war lehrreich.
+      </p>
+      <p>
+        <strong>Design-Prinzipien:</strong> Ich habe verstanden, wie wichtig eine klare Informationsarchitektur ist und 
+        wie man durch geschickte Verwendung von Whitespace und Typografie eine professionelle Wirkung erzielt. 
+        Die Balance zwischen technischem Look und Benutzerfreundlichkeit war eine interessante Herausforderung.
+      </p>
+      <p>
+        <strong>Herausforderungen:</strong> Die größte Herausforderung war die Optimierung für verschiedene Bildschirmgrößen, 
+        insbesondere die Navigation und die Timeline-Darstellung auf mobilen Geräten. Hier musste ich kreative Lösungen 
+        mit CSS Grid und Flexbox finden.
+      </p>
+    </section>
+
+    <!-- YouTube Video mit Datenschutz -->
+    <section>
+      <h3>Projekt-Demo Video</h3>
+      <div id="youtube-container" style="text-align: center; background-color: #f8f9fa; padding: 2rem; border-radius: 8px; margin: 2rem 0;">
+        <div id="youtube-placeholder">
+          <h4>📹 Demo-Video ansehen</h4>
+          <p>⚠️ <strong>Datenschutzhinweis:</strong> Dieses Video wird von YouTube gehostet. Durch das Laden werden Daten an YouTube/Google übertragen und Cookies gesetzt.</p>
+          <button onclick="loadYouTubeVideo()" style="background-color: #ff0000; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px;">
+            ▶️ Ich stimme zu - Video laden
+          </button>
+          <br><br>
+          <small>
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">YouTube Datenschutzerklärung</a> | 
+            <a href="https://www.youtube.com/howyoutubeworks/our-commitments/protecting-user-data/" target="_blank" rel="noopener noreferrer">YouTube Datenschutz</a>
+          </small>
+        </div>
+        <div id="youtube-iframe" style="display: none;">
+          <!-- YouTube iframe wird hier eingefügt -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Zurück-Link -->
+    <div class="back-link">
+      <p><a href="index.html">← Zurück zur Hauptseite</a></p>
+    </div>
+  </main>
+
+  <script>
+    function loadYouTubeVideo() {
+      // Beispiel YouTube Video ID - ersetzen Sie diese mit Ihrer echten Video ID
+      const videoId = 'dQw4w9WgXcQ'; // Beispiel-Video
+      
+      const iframe = document.createElement('iframe');
+      iframe.width = '560';
+      iframe.height = '315';
+      iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}`;
+      iframe.title = 'Portfolio Website Demo';
+      iframe.frameBorder = '0';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      iframe.style.maxWidth = '100%';
+      iframe.style.height = 'auto';
+      iframe.style.aspectRatio = '16/9';
+      
+      // Placeholder ausblenden und Video anzeigen
+      document.getElementById('youtube-placeholder').style.display = 'none';
+      document.getElementById('youtube-iframe').style.display = 'block';
+      document.getElementById('youtube-iframe').appendChild(iframe);
+    }
+  </script>
+</body>
+</html>
